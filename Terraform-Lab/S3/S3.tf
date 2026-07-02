@@ -5,5 +5,5 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "mybucket" {
-  bucket = "Manjunathnss3bucket1"
+  bucket = "manjunathnss3bucket123456"
 }
