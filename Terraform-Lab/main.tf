@@ -1,15 +1,13 @@
 provider "aws" {
-    region = "us-west-2"
-    access_key = ""
-    secret_key = ""
-
-
+  region = "ap-south-2"
+  access_key = ""
+  secret_key = ""
 }
 
-resource "aws_instance" "Intel_VPC" {
- cidr_block = "10.0.0.0/16"
+resource "aws_vpc" "myvpc" {
+  cidr_block = "10.0.0.0/16"
 
   tags = {
-    Name = "My-Intel_VPC"
+    Name = "Terraform-VPC"
   }
 }
