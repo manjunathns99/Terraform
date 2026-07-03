@@ -65,15 +65,6 @@ pipeline{
                     }
                 }
             }
-        }
-
-        stage('Backup-statefile'){
-            steps{
-                sh '''
-                cd iac-repo/07-Project-01
-
-                aws s3 cp *.tfstate s3://itkannadigaru-terraform-zero-to-hero/VPC-project/
-                '''
             }
 
         }
