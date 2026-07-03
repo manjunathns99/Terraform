@@ -61,7 +61,7 @@ pipeline{
                         sh "cd iac-repo/07-Project-01; terraform apply -input=false tfplan" 
                     } else if(params.terraformAction == 'destroy'){
                  
-                        sh "cd iac-repo/07-Project-01; terraform destroy -auto-approve" 
+                        sh "cd iac-repo/07-Project-01; terraform destroy -auto-approve"
                     }
                 }
             }
